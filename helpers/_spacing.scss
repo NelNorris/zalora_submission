@@ -1,0 +1,292 @@
+/*doc
+---
+title: Spacing
+name: mobile-components-1
+category: Components-Mobile
+---
+
+Price boxes are a common way to display a price of an item. Note the containers for reduced and special prices:
+
+
+```html_example
+    <p>
+      13px - SpaceXSmall
+    </p>
+    <p>
+      16px - SpaceSmall
+    </p>
+    <p>
+      25px - SpaceMedium
+    </p>
+    <p>
+      35px - SpaceLarge
+    </p>
+    <p>
+      45px - SpaceXLarge
+    </p>
+```
+> example-container
+*/
+
+/* ==========================================================================
+   Spacing-specific utilities
+   ========================================================================== */
+
+/**
+ * Used to adjust the default spacing between components
+ * Use with great care!
+ *
+ * u-<type><direction><size>
+ *
+ * A = all
+ * T = top
+ * R = right
+ * B = bottom
+ * L = left
+ * H = horizontal
+ * V = vertical
+ *
+ * n = none
+ * s = small
+ * m = medium
+ * l = large
+ * xl = extra large
+ */
+
+/* spacing helpers
+p,m = padding,margin
+a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
+*/
+
+.ptn, .pvn, .pan {
+  padding-top: 0px;
+}
+
+.ptxxs, .pvxxs, .paxxs {
+  padding-top: $spaceXXSmall;
+}
+
+.ptxs, .pvxs, .paxs {
+  padding-top: $spaceXSmall;
+}
+
+.pts, .pvs, .pas {
+  padding-top: $spaceSmall;
+}
+
+.ptm, .pvm, .pam,
+.ptml, .pvml, .paml {
+  padding-top: $spaceMedium;
+}
+
+.ptl, .pvl, .pal {
+  padding-top: $spaceLarge;
+}
+
+.ptxl, .pvxl, .paxl {
+  padding-top: $spaceXLarge;
+}
+
+.prn, .phn, .pan {
+  padding-right: 0px;
+}
+
+.prxxs, .phxxs, .paxxs {
+  padding-right: $spaceXXSmall;
+}
+
+.prxs, .phxs, .paxs {
+  padding-right: $spaceXSmall;
+}
+
+.prs, .phs, .pas {
+  padding-right: $spaceSmall;
+}
+
+.prm, .phm, .pam,
+.prml, .phml, .paml {
+  padding-right: $spaceMedium;
+}
+
+.prl, .phl, .pal {
+  padding-right: $spaceLarge;
+}
+
+.prxl, .phxl, .paxl {
+  padding-right: $spaceXLarge;
+}
+
+.pbn, .pvn, .pan {
+  padding-bottom: 0px;
+}
+
+.pbxxs, .pbxxs, .paxxs {
+  padding-bottom: $spaceXXSmall;
+}
+
+.pbxs, .pvxs, .paxs {
+  padding-bottom: $spaceXSmall;
+}
+
+.pbs, .pvs, .pas {
+  padding-bottom: $spaceSmall;
+}
+
+.pbm, .pvm, .pam,
+.pbml, .pvml, .paml {
+  padding-bottom: $spaceMedium;
+}
+
+.pbl, .pvl, .pal {
+  padding-bottom: $spaceLarge;
+}
+
+.pbxl, .pvxl, .paxl {
+  padding-bottom: $spaceXLarge;
+}
+
+.pln, .phn, .pan {
+  padding-left: 0px;
+}
+
+.plxxs, .phxxs, .paxxs {
+  padding-left: $spaceXXSmall;
+}
+
+.plxs, .phxs, .paxs {
+  padding-left: $spaceXSmall;
+}
+
+.pls, .phs, .pas {
+  padding-left: $spaceSmall;
+}
+
+.plm, .phm, .pam,
+.plml, .phml, .paml {
+  padding-left: $spaceMedium;
+}
+
+.pll, .phl, .pal {
+  padding-left: $spaceLarge;
+}
+
+.plxl, .phxl, .paxl {
+  padding-left: $spaceXLarge;
+}
+
+.mtn, .mvn, .man {
+  margin-top: 0px;
+}
+
+.mtxxs, .mvxxs, .maxxs {
+  margin-top: $spaceXXSmall;
+}
+
+.mtxs, .mvxs, .maxs {
+  margin-top: $spaceXSmall;
+}
+
+.mts, .mvs, .mas {
+  margin-top: $spaceSmall;
+}
+
+.mtm, .mvm, .mam,
+.mtml, .mvml, .maml {
+  margin-top: $spaceMedium;
+}
+
+.mtl, .mvl, .mal {
+  margin-top: $spaceLarge;
+}
+
+.mtxl, .mvxl, .maxl {
+  margin-top: $spaceXLarge;
+}
+
+.mrn, .mhn, .man {
+  margin-right: 0px;
+}
+
+.mrxxs, .mhxxs, .maxxs {
+  margin-right: $spaceXXSmall;
+}
+
+.mrxs, .mhxs, .maxs {
+  margin-right: $spaceXSmall;
+}
+
+.mrs, .mhs, .mas {
+  margin-right: $spaceSmall;
+}
+
+.mrm, .mhm, .mam,
+.mrml, .mhml, .maml {
+  margin-right: $spaceMedium;
+}
+
+.mrl, .mhl, .mal {
+  margin-right: $spaceLarge;
+}
+
+.mrxl, .mhxl, .maxl {
+  margin-right: $spaceXLarge;
+}
+
+.mrxxl, .mhxxl, .maxxl {
+  margin-right: $spaceXLarge;
+}
+
+.mbn, .mvn, .man {
+  margin-bottom: 0px;
+}
+
+.mbxxs, .mvxxs, .maxxs {
+  margin-bottom: $spaceXXSmall;
+}
+
+.mbxs, .mvxs, .maxs {
+  margin-bottom: $spaceXSmall;
+}
+
+.mbs, .mvs, .mas {
+  margin-bottom: $spaceSmall;
+}
+
+.mbm, .mvm, .mam,
+.mbml, .mvml, .maml {
+  margin-bottom: $spaceMedium;
+}
+
+.mbl, .mvl, .mal {
+  margin-bottom: $spaceLarge;
+}
+
+.mbxl, .mvxl, .maxl {
+  margin-bottom: $spaceXLarge;
+}
+
+.mln, .mhn, .man {
+  margin-left: 0px;
+}
+
+.mlxxs, .mhxxs, .maxxs {
+  margin-left: $spaceXXSmall;
+}
+
+.mlxs, .mhxs, .maxs {
+  margin-left: $spaceXSmall;
+}
+
+.mls, .mhs, .mas {
+  margin-left: $spaceSmall;
+}
+
+.mlm, .mhm, .mam,
+.mlml, .mhml, .maml {
+  margin-left: $spaceMedium;
+}
+
+.mll, .mhl, .mal {
+  margin-left: $spaceLarge;
+}
