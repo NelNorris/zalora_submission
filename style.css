@@ -148,6 +148,10 @@ body {
         padding-right: 8px; }
       body main .product__container .product__size .size_selection {
         padding-left: 8px; }
+      body main .product__container .product__size #js-size-list .ui-listBox-item {
+        display: none; }
+        body main .product__container .product__size #js-size-list .ui-listBox-item[data-sizesystem="International"] {
+          display: block; }
     body main .product__container .modal-content {
       position: relative;
       background-color: #fff;
@@ -195,7 +199,30 @@ body {
           height: 15px; }
     body main .product__container .product__action button {
       font-size: 16px;
-      padding: 16px 0; }
+      padding: 16px 0;
+      position: relative;
+      left: 0;
+      top: 0; }
+      body main .product__container .product__action button svg {
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 15%;
+        top: 0; }
+        body main .product__container .product__action button svg .tick {
+          stroke-dasharray: 50;
+          stroke-dashoffset: 50;
+          -webkit-transition: stroke-dashoffset 2s 0.5s ease-out;
+          -moz-transition: stroke-dashoffset 2s 0.5s ease-out;
+          -ms-transition: stroke-dashoffset 2s 0.5s ease-out;
+          -o-transition: stroke-dashoffset 2s 0.5s ease-out;
+          transition: stroke-dashoffset 2s 0.5s ease-out; }
+      body main .product__container .product__action button span {
+        color: #fff;
+        font-family: Arial, Helvetica;
+        padding-right: 0;
+        font-size: 16px;
+        line-height: 22px; }
       body main .product__container .product__action button .icon_favourites_medium_outline {
         width: 23px;
         height: 22px;
@@ -203,17 +230,27 @@ body {
         margin-right: 16px;
         vertical-align: middle; }
       body main .product__container .product__action button.add-to-cart--adding {
-        min-height: 50px;
-        background: url(img/adding-to-bag.gif) center no-repeat #000;
-        background-size: 2.5em; }
+        background-color: #000; }
+        body main .product__container .product__action button.add-to-cart--adding span {
+          font-size: 36px;
+          line-height: 4px;
+          padding-right: 0.9em;
+          vertical-align: top;
+          font-family: Garamond;
+          animation: dots 1s steps(5, end) infinite; }
       body main .product__container .product__action button.add-to-cart--finishing {
-        background: 15% #00b09f;
-        color: #fff;
-        background-size: 1.5em; }
+        background-color: #00b09f;
+        color: #fff; }
         body main .product__container .product__action button.add-to-cart--finishing img {
           width: auto;
           height: 16px;
           padding-right: 10px; }
+        body main .product__container .product__action button.add-to-cart--finishing svg {
+          width: 92px;
+          height: 50px; }
+          body main .product__container .product__action button.add-to-cart--finishing svg .path {
+            opacity: 1;
+            stroke-dashoffset: 0; }
     body main .product__container .product__delivery {
       padding: 35px 16px; }
       body main .product__container .product__delivery p {
@@ -325,6 +362,19 @@ body {
   body .text-attention {
     color: #00b09f; }
 
+@keyframes dots {
+  0%, 20% {
+    color: white;
+    text-shadow: 0.6em 0 0 rgba(255, 255, 255, 0.5), 1.2em 0 0 rgba(255, 255, 255, 0.5); }
+  40% {
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0.6em 0 0 white, 1.2em 0 0 rgba(255, 255, 255, 0.5); }
+  60% {
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0.6em 0 0 white, 1.2em 0 0 rgba(255, 255, 255, 0.5); }
+  80%, 100% {
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0.6em 0 0 rgba(255, 255, 255, 0.5), 1.2em 0 0 white; } }
 /*doc
 ---
 title: Price
